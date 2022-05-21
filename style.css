@@ -542,7 +542,7 @@
     font-size: .83em;
     line-height: 1.75;
     color: #666666;
-    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    background-image: linear-gradient(135deg, #fdfcfb 0%, white 100%);
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
   }

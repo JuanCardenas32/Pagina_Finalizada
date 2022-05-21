@@ -2,78 +2,69 @@
 <html lang="es">
     <head>
     <meta charset="UTF-8">
-    <title>Faruguey</title>
+    <title>FLEX</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    
+        <link rel="stylesheet" href="lightbox2-2.11.3/">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-
+        
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
         
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lightbox.min.css">
 
    
 
     </head>
+    <div class="main-header">
+        
+        <div class="container">
+            
+            <div id="menu-wrapper">
+                <div class="row">
+                    
+                    <div class="logo-wrapper col-md-2 col-sm-2 d-inline-block align-text-top sticky-top">
+                        <h1>
+                            <a href="#">Flex</a>
+                        </h1>
+                        <button class="navbar-toggler" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#navbarSupportedContent" 
+                        aria-controls="navbarSupportedContent" 
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon">
+                            </span>
+                          </button>
+                          
+                    </div>
+                </nav>
+                
+                    <div class="col-md-10 col-sm-10 main-menu text-right sticky-top">
+                        
+                        <div class="toggle-menu visible-sm visible-xs"><i class="fa fa-bars"></i></div>
+                        <ul class="menu-first">
+                        
+                            <li class="active" aria-current="page"><a href="#">Home</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#our-team">Team</a></li>
+                            <li><a href="https://www.facebook.com/" class="external" rel="nofollow">External</a></li> 
+                            <li><a href="#contact">Contact</a></li>                                 
+                        </ul>                                    
+                    </div> 
+                </div>
+            </div>                         
+        </div> 
+    </div> 
     <body>
        
-                <div class="main-header">
-                    <div class="container text-center text-light">
-                        <i class="bi bi-facebook h3 "></i>
-                        <i class="bi bi-twitter h3"></i>
-                        <i class="bi bi-twitch h3"></i>
-                        <i class="bi bi-whatsapp h3"></i>
-                       </div>
-
-                    <div class="container">
-                        
-                        <div id="menu-wrapper">
-                            <div class="row">
-                                
-                                <div class="logo-wrapper col-md-2 col-sm-2 d-inline-block align-text-top">
-                                    <h1>
-                                        <a href="#">Flex</a>
-                                    </h1>
-                                    <button class="navbar-toggler" 
-                                    type="button" 
-                                    data-bs-toggle="collapse" 
-                                    data-bs-target="#navbarSupportedContent" 
-                                    aria-controls="navbarSupportedContent" 
-                                    aria-expanded="false" 
-                                    aria-label="Toggle navigation">
-                                        <span class="navbar-toggler-icon">
-                                        </span>
-                                      </button>
-                                      
-                                </div>
-                            </nav>
-                            
-                                <div class="col-md-10 col-sm-10 main-menu text-right">
-                                    
-                                    <div class="toggle-menu visible-sm visible-xs"><i class="fa fa-bars"></i></div>
-                                    <ul class="menu-first">
-                                    
-                                        <li class="active" aria-current="page"><a href="#">Home</a></li>
-                                        <li><a href="#services">Services</a></li>
-                                        <li><a href="#portfolio">Portfolio</a></li>
-                                        <li><a href="#our-team">Team</a></li>
-                                        <li><a href="https://www.facebook.com/" class="external" rel="nofollow">External</a></li> 
-                                        <li><a href="#contact">Contact</a></li>                                 
-                                    </ul>                                    
-                                </div> 
-                            </div>
-                        </div>                         
-                    </div> 
-                </div> 
             </div> 
-            
-            
-
-
-
             
             <div id="carouselExampleCaptions" 
             class="carousel slide" 
@@ -212,21 +203,21 @@
 
 
         <div class="content-section" id="portfolio">
-            <main class="container">
+            <div class="container">
                 <div class="row">
                     <div class="heading-section col-md-12 text-center">
                         <h2>Our Portfolio</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, dignissimos!</p>
                     </div> 
                 </div>
-                <div class="row galeria">
+                <div class="row">
                     <div class="portfolio-item col-md-3 col-sm-6">
-                        <div class="portfolio-thumb material-placeholder modal-content">
-                            <img src="imagenes/p1.jpg" alt="">
-                            <div class="portfolio-overlay material-placeholder ">
+                        <div class="portfolio-thumb">
+                            <img src="imagenes/p1.jpg" alt="" data-lightbox="mygallery"  data-title="Caption Here">
+                            <div class="portfolio-overlay">
                                 <h3>New Walk</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, ducimus.</p>
-                                <a href="imagenes/p1.jpg" data-rel="lightbox" class="expand responsive-img materialboxed modal-content data-caption="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A doloremque suscipit </p>
+                                <a href="imagenes/p1.jpg" data-lightbox="mygallery" class="expand img-fluid">
                                     <i class="bi bi-search"></i>
                                 </a>
                             </div>
@@ -234,86 +225,86 @@
                     </div> 
                     <div class="portfolio-item col-md-3 col-sm-6">
                         <div class="portfolio-thumb">
-                            <img src="imagenes/p2.jpg" alt="">
+                            <img src="imagenes/p2.jpg" alt="" data-lightbox="mygallery"  data-title="Caption Here">
                             <div class="portfolio-overlay">
-                                <h3>Boat</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, ducimus.</p>
-                                <a href="imagenes/p2.jpg" data-rel="lightbox" class="expand">
+                                <h3>New Walk</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A doloremque suscipit </p>
+                                <a href="imagenes/p2.jpg" data-lightbox="mygallery" class="expand img-fluid">
                                     <i class="bi bi-search"></i>
                                 </a>
-                            </div> 
+                            </div>
                         </div> 
                     </div> 
                     <div class="portfolio-item col-md-3 col-sm-6">
                         <div class="portfolio-thumb">
-                            <img src="imagenes/p3.jpg" alt="">
+                            <img src="imagenes/p3.jpg" alt="" data-lightbox="mygallery"  data-title="Caption Here">
                             <div class="portfolio-overlay">
-                                <h3>Urban</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, ducimus.</p>
-                                <a href="imagenes/p3.jpg" data-rel="lightbox" class="expand">
+                                <h3>New Walk</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A doloremque suscipit </p>
+                                <a href="imagenes/p3.jpg" data-lightbox="mygallery" class="expand img-fluid">
                                     <i class="bi bi-search"></i>
                                 </a>
-                            </div> 
+                            </div>
                         </div> 
                     </div> 
                     <div class="portfolio-item col-md-3 col-sm-6">
                         <div class="portfolio-thumb">
-                            <img src="imagenes/p4.jpg" alt="">
+                            <img src="imagenes/p4.jpg" alt="" data-lightbox="mygallery"  data-title="Caption Here">
                             <div class="portfolio-overlay">
-                                <h3>Cycling</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, ducimus.</p>
-                                <a href="imagenes/p4.jpg" data-rel="lightbox" class="expand">
+                                <h3>New Walk</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A doloremque suscipit </p>
+                                <a href="imagenes/p4.jpg" data-lightbox="mygallery" class="expand img-fluid">
                                     <i class="bi bi-search"></i>
                                 </a>
-                            </div> 
-                        </div>
-                    </div> 
-                    <div class="portfolio-item col-md-3 col-sm-6">
-                        <div class="portfolio-thumb">
-                            <img src="imagenes/p5.jpg" alt="">
-                            <div class="portfolio-overlay">
-                                <h3>Digital Era</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, ducimus.</p>
-                                <a href="imagenes/p5.jpg" data-rel="lightbox" class="expand">
-                                    <i class="bi bi-search"></i>
-                                </a>
-                            </div> 
+                            </div>
                         </div> 
                     </div> 
                     <div class="portfolio-item col-md-3 col-sm-6">
                         <div class="portfolio-thumb">
-                            <img src="imagenes/p6.jpg" alt="">
+                            <img src="imagenes/p5.jpg" alt="" data-lightbox="mygallery"  data-title="Caption Here">
                             <div class="portfolio-overlay">
-                                <h3>Horizon</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, ducimus.</p>
-                                <a href="imagenes/p6.jpg" data-rel="lightbox" class="expand">
+                                <h3>New Walk</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A doloremque suscipit </p>
+                                <a href="imagenes/p5.jpg" data-lightbox="mygallery" class="expand img-fluid">
                                     <i class="bi bi-search"></i>
                                 </a>
-                            </div> 
+                            </div>
                         </div> 
                     </div> 
                     <div class="portfolio-item col-md-3 col-sm-6">
                         <div class="portfolio-thumb">
-                            <img src="imagenes/p7.jpg" alt="">
+                            <img src="imagenes/p6.jpg" alt="" data-lightbox="mygallery"  data-title="Caption Here">
                             <div class="portfolio-overlay">
-                                <h3>Aquatic City</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, ducimus.</p>
-                                <a href="imagenes/p7.jpg" data-rel="lightbox" class="expand">
+                                <h3>New Walk</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A doloremque suscipit </p>
+                                <a href="imagenes/p6.jpg" data-lightbox="mygallery" class="expand img-fluid">
                                     <i class="bi bi-search"></i>
                                 </a>
-                            </div> 
+                            </div>
                         </div> 
                     </div> 
                     <div class="portfolio-item col-md-3 col-sm-6">
                         <div class="portfolio-thumb">
-                            <img src="imagenes/p8.jpg" alt="">
+                            <img src="imagenes/p7.jpg" alt="" data-lightbox="mygallery"  data-title="Caption Here">
                             <div class="portfolio-overlay">
-                                <h3>New Path</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, ducimus.</p>
-                                <a href="imagenes/p8.jpg" data-rel="lightbox" class="expand">
+                                <h3>New Walk</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A doloremque suscipit </p>
+                                <a href="imagenes/p7.jpg" data-lightbox="mygallery" class="expand img-fluid">
                                     <i class="bi bi-search"></i>
                                 </a>
-                            </div> 
+                            </div>
+                        </div> 
+                    </div> 
+                    <div class="portfolio-item col-md-3 col-sm-6">
+                        <div class="portfolio-thumb">
+                            <img src="imagenes/p8.jpg" alt="" data-lightbox="mygallery"  data-title="Caption Here">
+                            <div class="portfolio-overlay">
+                                <h3>New Walk</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A doloremque suscipit </p>
+                                <a href="imagenes/p8.jpg" data-lightbox="mygallery" class="expand img-fluid">
+                                    <i class="bi bi-search"></i>
+                                </a>
+                            </div>
                         </div> 
                     </div> 
                 </div> 
@@ -492,8 +483,10 @@
             </div> 
         </div>
 
+        
+        <script src="lightbox-plus-jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <script src="main.js"></script>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
   </body>
